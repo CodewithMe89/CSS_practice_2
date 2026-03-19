@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Practice 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Q1. Using CSS Flexbox, create a **300px × 300px container** with a **100px × 100px box** inside it.Place the box at the **top-left corner** of the container. -->
+  <div class="container">
+    <div class="box"></div>
+  </div>
+  <!-- Q2. Using CSS Flexbox, create a 300px × 300px container with a 100px × 100px box centered both horizontally and vertically. -->
+  <div class="container1">
+    <div class="box1"></div>
+  </div>
+
+  <!-- Q3. Design a **responsive navigation bar** using Flexbox where:
+  - Each navigation item takes **equal space**
+  - On reducing screen size, the items **wrap to the next line** -->
+
+  <nav>
+    <h1>FirstNav</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About</a></li>
+      <li><a href="/">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Q4. Create a **Profile Card** using CSS Flexbox with the following requirements:
+  - Card width should be **200px**
+  - Include a profile image, name, and description
+  - Align the content vertically -->
+  <div class="card">
+    <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_rp_progressive&w=740&q=80" alt="profileImage">
+    <h1>Keshav</h1>
+    <p>I am learner that try to learn from every projects.</p>
+  </div>
+
+  <!-- Q5. Using Flexbox, design a **Course Card**
+  - Use the image placeholder: [`https://via.placeholder.com/150`](https://via.placeholder.com/150)
+  - Display the course title and description below the image -->
+  <div class="course-card">
+    <img src="https://placehold.co/150x150" alt="courseImage">
+    <h1>course title</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste libero est tempore.</p>
+  </div>
+
+  <!-- Q6. Create a **Product Card** using CSS Flexbox:
+  - Product image on the **left**
+  - Product details on the **right**
+  - Maximum width of the card should be **400px** -->
+  <div class="product-card">
+    <img src="https://placehold.co/200x200?text=Product+Image" alt="">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sint, placeat facilis voluptate accusamus eveniet explicabo. Quod expedita voluptate veritatis repellat praesentium.</p>
+  </div>
+
+  <!-- Q7. Design a **Testimonial Card** using Flexbox:
+  - Include a testimonial message and user name
+  - Maximum width of the card should be **400px**
+  - Content should be properly aligned -->
+  <div class="testimonial">
+    <h2>Mr. Keshav</h2>
+    <p>"It felt like having an experienced co-founder on our side. It helped us develop our idea and get our first investment we've now raised over £3 million and are growing quickly."</p>
+  </div>
+
+  <!-- Q8. Create a **Pricing Card** using CSS Flexbox
+  - Card width should be **200px**
+  - Display plan name, price, and a button vertically
+  - Use Flexbox for alignment -->
+  <div class="pricing-card">
+    <h2>Free Plan</h2>
+    <p>$ 0</p>
+    <button>Subscribe now</button>
+  </div>
+</body>
 </html>
