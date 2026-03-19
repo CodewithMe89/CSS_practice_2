@@ -150,9 +150,100 @@ li a{
 .pricing-card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 12.5rem;
   margin-top: 0.625rem;
-
+  padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+
+}
+.pricing-card p{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.pricing-card button{
+  border-style: none;
+  outline: none;
+  font-size: 1.56rem;
+  background-color: black;
+  color: white;
+  border-radius: 1.45rem;
+  padding: 9px 0;
+}
+
+/* Q9. */
+.pricingCards{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.pCard{
+  display: flex;
+  flex-direction: column;
+  width: 12.5rem;
+  margin-top: 0.625rem;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.pCard p{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.pCard button{
+  border-style: none;
+  outline: none;
+  font-size: 1.56rem;
+  background-color: black;
+  color: white;
+  border-radius: 1.45rem;
+  padding: 9px 0;
+}
+
+/* Q10. */
+footer{
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+}
+.footer-column{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+list-style: none;
+text-decoration: none;
+min-width: 12.5rem;
+font-size: 1.56rem;
+}
+
+.footer-column ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column a{
+  text-decoration: none;
+  color: white;
+
+}
+
+@media only screen and (max-width: 767px) {
+  footer{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
